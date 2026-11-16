@@ -1,0 +1,225 @@
+/* Simple Student E-commerce CSS */
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Simple navigation styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+/* Simple button styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Product cards */
+.product-card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Price styling */
+.price-sale {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Simple hero section */
+.hero-section {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Simple category grid */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.category-item {
+    text-align: center;
+    padding: 30px 15px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-item:hover {
+    background-color: #f8f9fa;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.category-icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Simple product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+/* Cart styling */
+.cart-item {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Form styling */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Alert messages */
+.alert {
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* Admin panel simple styling */
+.admin-sidebar {
+    background: #343a40;
+    min-height: calc(100vh - 76px);
+    padding: 20px 15px;
+}
+
+.admin-sidebar .nav-link {
+    color: #adb5bd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.admin-sidebar .nav-link:hover,
+.admin-sidebar .nav-link.active {
+    background: #007bff;
+    color: white;
+}
+
+.admin-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-card-icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.admin-card-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+}
+
+.admin-card-label {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Simple responsive design */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section {
+        padding: 40px 0;
+    }
+}
+
+/* Hide all pagination elements completely - AGGRESSIVE */
+.pagination, .page-item, .page-link, .paginate, nav[aria-label="pagination"],
+.pagination *, .page-item *, .page-link *, .paginate *,
+[class*="pagination"], [class*="page-"], [class*="paginate"],
+ul.pagination, .pagination ul, .pagination li, .pagination a,
+.btn-group[role="group"] .btn[disabled],
+.btn[aria-label*="Previous"], .btn[aria-label*="Next"],
+.btn:contains("‹"), .btn:contains("›"), .btn:contains("«"), .btn:contains("»"),
+nav[role="navigation"], .pager, .paging {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden !important;
+    position: absolute !important;
+    left: -9999px !important;
+}
+
+@media (max-width: 576px) {
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+}
